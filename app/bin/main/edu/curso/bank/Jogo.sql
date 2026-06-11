@@ -1,0 +1,33 @@
+CREATE DATABASE JogoDatabase
+USE JogoDatabase
+GO
+
+CREATE TABLE jogo (
+
+ID INT NOT NULL,
+nome VARCHAR(50) NOT NULL,
+preco DECIMAL(5,2) NOT NULL,
+dataLancamento DATE NOT NULL,
+espacoGB DECIMAL(3,1) NOT NULL,
+genero VARCHAR(30) NOT NULL,
+descricao VARCHAR(255) NULL
+
+PRIMARY KEY (ID)
+
+)
+GO
+
+CREATE TABLE desenvolvedor (
+
+ID INT NOT NULL,
+nomeEmpresa VARCHAR(50) NOT NULL,
+cnpjcpf VARCHAR(14) NOT NULL,
+email VARCHAR(50) NOT NULL,
+telefone VARCHAR(11) NOT NULL,
+dataNasc DATE NOT NULL,
+senhaConta VARCHAR(20) NOT NULL
+
+PRIMARY KEY (ID)
+
+)
+GO
