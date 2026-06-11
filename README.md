@@ -1,4 +1,4 @@
-- Nome do Projeto: SteamVerde;
+- Nome do Projeto: MiniSteam;
 - Nome do Integrante: Nicolas Boffo;
 - Tema Escolhido: Site de Publicação de Jogos Digitais;
 - Descrição do Problema Resolvido: O projeto armazena usuários e jogos para sua database;
@@ -8,4 +8,7 @@
 	- CadastroDesenvolvedorUI e CadastroJogoUI: Servem para cadastrar suas respectivas categorias, com campos para preencher e publicando-os para o banco;
 	- AdminUI e JogoUI: São telas cuja função são para CRUD's completos, além de suas respectivas visualizações de cadastros pelo TableView;
 - Divisão de Responsabilidades: Trabalho Feito Solo;
-- Link do Vídeo: 
+
+- Link do Vídeo: https://youtu.be/pnxLj2P8e0U 
+- Link do GitHub: https://github.com/NicolasChief/06.2026-FatecZL-TrabalhoSemestral-POO/tree/main
+- Comando de Acesso Direto: java -jar app\build\libs\MiniSteam-all.jar

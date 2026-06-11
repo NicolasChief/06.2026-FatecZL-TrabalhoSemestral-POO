@@ -41,3 +41,24 @@ application {
     // Define the main class for the application.
     mainClass = "edu.curso.view.LoginUI"
 }
+
+// Create a FAT JAR with all dependencies
+val fatJar by tasks.registering(Jar::class) {
+    archiveBaseName.set("MiniSteam")
+    archiveClassifier.set("all")
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    
+    manifest {
+        attributes["Main-Class"] = "edu.curso.view.LoginUI"
+    }
+    
+    from(sourceSets.main.get().output)
+    dependsOn(configurations.runtimeClasspath)
+    from({
+        configurations.runtimeClasspath.get().filter { it.isFile }.map { zipTree(it) }
+    })
+}
+
+tasks.build {
+    dependsOn(fatJar)
+}

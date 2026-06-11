@@ -74,7 +74,7 @@ public class LoginUI extends Application {
         btnAdmin.setOnAction(e -> {new AdminUI().start(stage);});
 
         Scene scene = new Scene(bp, 500, 300);
-        stage.setTitle("SteamVerde");
+        stage.setTitle("MiniSteam");
         stage.setScene(scene);
         stage.show();
 
@@ -83,5 +83,5 @@ public class LoginUI extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
